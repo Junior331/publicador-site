@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conectando ao TikTok · Cogu Chef Publicador</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+<header><span class="logo">🍄</span><h1>Conectando ao TikTok…</h1></header>
+<p>Voltando para o Publicador. Se nada acontecer, <a id="link" href="#">clique aqui</a>.</p>
+<script>
+  // Repassa o code/state do TikTok para o Publicador rodando no computador do criador
+  var destino = 'http://localhost:4300/auth/tiktok/callback' + location.search;
+  document.getElementById('link').href = destino;
+  location.replace(destino);
+</script>
+</main>
+</body>
+</html>
